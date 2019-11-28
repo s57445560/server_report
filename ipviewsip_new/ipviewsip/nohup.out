@@ -1,0 +1,285 @@
+[28/Nov/2019 14:35:36] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:35:40] "GET /xadmin/ipdata/ipconfig/ HTTP/1.1" 200 72896
+[28/Nov/2019 14:35:40] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 14:35:41] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:36:39] "GET /xadmin/ipdata/ipconfig/add/ HTTP/1.1" 200 17600
+[28/Nov/2019 14:36:40] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+[28/Nov/2019 14:36:40] "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1868
+[28/Nov/2019 14:36:40] "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+[28/Nov/2019 14:36:40] "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1868
+[28/Nov/2019 14:36:40] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:36:45] "POST /xadmin/ipdata/ipconfig/add/ HTTP/1.1" 302 0
+[28/Nov/2019 14:36:46] "GET /xadmin/ipdata/ipconfig/add/ HTTP/1.1" 200 17953
+[28/Nov/2019 14:36:46] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 14:36:46] "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1868
+[28/Nov/2019 14:36:46] "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1868
+[28/Nov/2019 14:36:46] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:36:54] "POST /xadmin/ipdata/ipconfig/add/ HTTP/1.1" 302 0
+[28/Nov/2019 14:36:54] "GET /xadmin/ipdata/ipconfig/ HTTP/1.1" 200 73134
+[28/Nov/2019 14:36:54] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 14:36:55] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:37:32] "GET /xadmin/ipdata/ipconfig/?_q_=10.11.3.26 HTTP/1.1" 200 23466
+[28/Nov/2019 14:37:32] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 14:37:33] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:37:34] "GET /xadmin/ipdata/ipconfig/ HTTP/1.1" 200 72828
+[28/Nov/2019 14:37:34] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 14:37:34] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:45:23] "GET /report HTTP/1.1" 200 526
+[28/Nov/2019 14:45:23] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js HTTP/1.1" 200 857
+[28/Nov/2019 14:45:23] "GET /static/js/app.6d4d44f154f5f6cbb1ef.js HTTP/1.1" 200 19693
+[28/Nov/2019 14:45:24] "GET /static/css/app.0a0040a74c277e56810027d07eda5503.css HTTP/1.1" 200 233728
+[28/Nov/2019 14:45:24] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js.map HTTP/1.1" 200 4972
+[28/Nov/2019 14:45:24] "GET /static/css/app.0a0040a74c277e56810027d07eda5503.css.map HTTP/1.1" 200 332781
+[28/Nov/2019 14:45:25] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js HTTP/1.1" 200 1663702
+[28/Nov/2019 14:45:26] "GET /static/project.config.json HTTP/1.1" 200 45
+[28/Nov/2019 14:45:26] "GET /static/js/app.6d4d44f154f5f6cbb1ef.js.map HTTP/1.1" 200 77279
+[28/Nov/2019 14:45:26] "GET /static/fonts/element-icons.535877f.woff HTTP/1.1" 200 28200
+[28/Nov/2019 14:45:27] "GET /api/v1/base_info HTTP/1.1" 200 1951
+[28/Nov/2019 14:45:27] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:27] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:45:27] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:28] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js.map HTTP/1.1" 200 7859163
+[28/Nov/2019 14:45:30] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:45:30] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:45:30] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:45:32] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:45:33] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:45:34] "GET / HTTP/1.1" 200 526
+[28/Nov/2019 14:45:34] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js HTTP/1.1" 200 857
+[28/Nov/2019 14:45:34] "GET /static/js/app.6d4d44f154f5f6cbb1ef.js HTTP/1.1" 200 19693
+[28/Nov/2019 14:45:34] "GET /static/css/app.0a0040a74c277e56810027d07eda5503.css HTTP/1.1" 200 233728
+[28/Nov/2019 14:45:34] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js HTTP/1.1" 200 1663702
+[28/Nov/2019 14:45:35] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js.map HTTP/1.1" 200 4972
+[28/Nov/2019 14:45:35] "GET /static/css/app.0a0040a74c277e56810027d07eda5503.css.map HTTP/1.1" 200 332781
+[28/Nov/2019 14:45:35] "GET /static/project.config.json HTTP/1.1" 200 45
+[28/Nov/2019 14:45:35] "GET /static/js/app.6d4d44f154f5f6cbb1ef.js.map HTTP/1.1" 200 77279
+[28/Nov/2019 14:45:35] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:45:35] "GET /api/v1/base_info HTTP/1.1" 200 1951
+[28/Nov/2019 14:45:35] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:45:35] "GET /static/fonts/element-icons.535877f.woff HTTP/1.1" 200 28200
+[28/Nov/2019 14:45:37] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js.map HTTP/1.1" 200 7859163
+[28/Nov/2019 14:45:38] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:38] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:45:38] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:38] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:38] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:40] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:40] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:41] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:41] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:44] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&timestrap=2019-11-28 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:44] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&timestrap=2019-11-28 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:45] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:45] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:45:46] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:45:46] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:52:17] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:52:17] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:52:19] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:52:19] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:52:19] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:52:21] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:52:21] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:52:21] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:52:21] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 420
+[28/Nov/2019 14:52:21] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2600
+[28/Nov/2019 14:52:24] "GET /report HTTP/1.1" 200 526
+[28/Nov/2019 14:52:24] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js HTTP/1.1" 200 857
+[28/Nov/2019 14:52:24] "GET /static/js/app.6d4d44f154f5f6cbb1ef.js HTTP/1.1" 200 19693
+[28/Nov/2019 14:52:24] "GET /static/css/app.0a0040a74c277e56810027d07eda5503.css HTTP/1.1" 200 233728
+[28/Nov/2019 14:52:24] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js.map HTTP/1.1" 200 4972
+[28/Nov/2019 14:52:25] "GET /static/css/app.0a0040a74c277e56810027d07eda5503.css.map HTTP/1.1" 200 332781
+[28/Nov/2019 14:52:26] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js HTTP/1.1" 200 1663702
+[28/Nov/2019 14:52:27] "GET /static/project.config.json HTTP/1.1" 200 45
+[28/Nov/2019 14:52:27] "GET /static/js/app.6d4d44f154f5f6cbb1ef.js.map HTTP/1.1" 200 77279
+[28/Nov/2019 14:52:27] "GET /static/fonts/element-icons.535877f.woff HTTP/1.1" 200 28200
+[28/Nov/2019 14:52:27] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 420
+[28/Nov/2019 14:52:27] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2600
+[28/Nov/2019 14:52:27] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:52:27] "GET /api/v1/base_info HTTP/1.1" 200 1951
+[28/Nov/2019 14:52:29] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 420
+[28/Nov/2019 14:52:29] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:52:30] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js.map HTTP/1.1" 200 7859163
+[28/Nov/2019 14:56:00] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 419
+[28/Nov/2019 14:56:00] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:56:01] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:56:01] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 14:56:01] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 14:56:03] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 419
+[28/Nov/2019 14:56:03] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2600
+[28/Nov/2019 14:56:03] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 419
+[28/Nov/2019 14:56:03] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2600
+[28/Nov/2019 14:56:03] "GET /favicon.ico HTTP/1.1" 200 526
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 28, 2019 - 14:24:17
+Django version 1.11.11, using settings 'ipviewsip.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+'str' object has no attribute 'decode'
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+国家平台 政府事业部 ip
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+国家平台 政府事业部 all
+123
+456
+456
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+国家平台 政府事业部 all
+国家平台 政府事业部 ip
+123
+456
+国家平台 政府事业部 all
+国家平台 政府事业部 ip
+123
+456
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+456
+123
+456
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+国家平台 政府事业部 ip
+国家平台 政府事业部 all
+123
+456
+国家平台 政府事业部 all
+国家平台 政府事业部 ip
+123
+456
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+{'ip_all': 541, 'e_all': 25, 'number': {'政府事业部': 268, 'IT运维': 20, '出行事业部': 29, '电池溯源事业部': 20, 'X计划事业部': 17, '车联网事业部': 89, '大数据商业平台': 93, '大数据联盟': 1, '公司官网': 1, '总师办': 3}, 'b_list': ['政府事业部', 'IT运维', '出行事业部', '电池溯源事业部', 'X计划事业部', '车联网事业部', '大数据商业平台', '大数据联盟', '公司官网', '总师办'], 'b_n_list': [268, 20, 29, 20, 17, 89, 93, 1, 1, 3]}
+国家平台 政府事业部 ip
+123
+国家平台 政府事业部 all
+456
+国家平台 政府事业部 all
+国家平台 政府事业部 ip
+123
+456
+[28/Nov/2019 16:46:01] "GET /report HTTP/1.1" 200 526
+[28/Nov/2019 16:46:01] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js HTTP/1.1" 200 857
+[28/Nov/2019 16:46:01] "GET /static/js/app.1f3cd07fb3f90ad453e6.js HTTP/1.1" 200 20887
+[28/Nov/2019 16:46:01] "GET /static/css/app.fb4bbb377455743172b5d3a893515dda.css HTTP/1.1" 200 233728
+[28/Nov/2019 16:46:02] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js.map HTTP/1.1" 200 4972
+[28/Nov/2019 16:46:02] "GET /static/css/app.fb4bbb377455743172b5d3a893515dda.css.map HTTP/1.1" 200 332855
+[28/Nov/2019 16:46:04] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js HTTP/1.1" 200 1663702
+[28/Nov/2019 16:46:04] "GET /static/project.config.json HTTP/1.1" 200 45
+[28/Nov/2019 16:46:04] "GET /static/js/app.1f3cd07fb3f90ad453e6.js.map HTTP/1.1" 200 80836
+[28/Nov/2019 16:46:05] "GET /static/fonts/element-icons.535877f.woff HTTP/1.1" 200 28200
+[28/Nov/2019 16:46:05] "GET /api/v1/base_info HTTP/1.1" 200 1951
+[28/Nov/2019 16:46:05] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 16:46:05] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 418
+[28/Nov/2019 16:46:05] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2620
+[28/Nov/2019 16:46:06] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 418
+[28/Nov/2019 16:46:06] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2620
+[28/Nov/2019 16:46:07] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js.map HTTP/1.1" 200 7859163
+[28/Nov/2019 16:46:14] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&timestrap=&order=&filter=10.10.1 HTTP/1.1" 200 2649
+[28/Nov/2019 16:46:20] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&timestrap=&order=-memoryrate&filter=10.10.1 HTTP/1.1" 200 2667
+[28/Nov/2019 16:46:26] "GET /api/v1/all_info?e=IT%E8%BF%90%E7%BB%B4&b=IT%E8%BF%90%E7%BB%B4&id=27 HTTP/1.1" 200 323
+[28/Nov/2019 16:46:26] "GET /api/v1/ip_info?e=IT%E8%BF%90%E7%BB%B4&b=IT%E8%BF%90%E7%BB%B4&id=27 HTTP/1.1" 200 2581
+[28/Nov/2019 16:46:28] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=&order=-memoryrate&filter=10.10.1 HTTP/1.1" 200 584
+[28/Nov/2019 16:58:26] "GET /report HTTP/1.1" 200 526
+[28/Nov/2019 16:58:26] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js HTTP/1.1" 200 857
+[28/Nov/2019 16:58:27] "GET /static/js/app.909aa0163a896d01c2f7.js HTTP/1.1" 200 21056
+[28/Nov/2019 16:58:27] "GET /static/css/app.fb4bbb377455743172b5d3a893515dda.css HTTP/1.1" 200 233728
+[28/Nov/2019 16:58:27] "GET /xadmin/ipdata/ipconfig/ HTTP/1.1" 200 72828
+[28/Nov/2019 16:58:27] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js.map HTTP/1.1" 200 4972
+[28/Nov/2019 16:58:27] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+[28/Nov/2019 16:58:28] "GET /static/css/app.fb4bbb377455743172b5d3a893515dda.css.map HTTP/1.1" 200 332855
+[28/Nov/2019 16:58:28] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 16:58:29] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js HTTP/1.1" 200 1663702
+[28/Nov/2019 16:58:29] "GET /static/project.config.json HTTP/1.1" 200 45
+[28/Nov/2019 16:58:29] "GET /static/js/app.909aa0163a896d01c2f7.js.map HTTP/1.1" 200 81367
+[28/Nov/2019 16:58:30] "GET /static/fonts/element-icons.535877f.woff HTTP/1.1" 200 28200
+[28/Nov/2019 16:58:30] "GET /api/v1/base_info HTTP/1.1" 200 1951
+[28/Nov/2019 16:58:30] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4 HTTP/1.1" 200 323
+[28/Nov/2019 16:58:30] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 16:58:30] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4 HTTP/1.1" 200 2581
+[28/Nov/2019 16:58:32] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js.map HTTP/1.1" 200 7859163
+[28/Nov/2019 16:58:35] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=&order=&filter=10. HTTP/1.1" 200 2580
+[28/Nov/2019 16:58:39] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=&order=&filter=10.10.1 HTTP/1.1" 200 584
+[28/Nov/2019 16:58:42] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 418
+[28/Nov/2019 16:58:42] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2620
+[28/Nov/2019 17:58:26] "GET /report HTTP/1.1" 200 526
+[28/Nov/2019 17:58:27] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js HTTP/1.1" 200 857
+[28/Nov/2019 17:58:27] "GET /static/js/app.cdcb4e0cf2535bcdbea6.js HTTP/1.1" 200 21494
+[28/Nov/2019 17:58:27] "GET /static/css/app.939a806b6e1396416a706d2961ad6807.css HTTP/1.1" 200 233728
+[28/Nov/2019 17:58:27] "GET /static/js/manifest.2ae2e69a05c33dfc65f8.js.map HTTP/1.1" 200 4972
+[28/Nov/2019 17:58:27] "GET /static/css/app.939a806b6e1396416a706d2961ad6807.css.map HTTP/1.1" 200 332889
+[28/Nov/2019 17:58:29] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js HTTP/1.1" 200 1663702
+[28/Nov/2019 17:58:29] "GET /static/project.config.json HTTP/1.1" 200 45
+[28/Nov/2019 17:58:29] "GET /static/js/app.cdcb4e0cf2535bcdbea6.js.map HTTP/1.1" 200 82489
+[28/Nov/2019 17:58:30] "GET /api/v1/all_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 418
+[28/Nov/2019 17:58:30] "GET /api/v1/base_info HTTP/1.1" 200 1951
+[28/Nov/2019 17:58:30] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0 HTTP/1.1" 200 2620
+[28/Nov/2019 17:58:30] "GET /static/fonts/element-icons.535877f.woff HTTP/1.1" 200 28200
+[28/Nov/2019 17:58:30] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 17:58:31] "GET /api/v1/all_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 418
+[28/Nov/2019 17:58:31] "GET /api/v1/ip_info?e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&id=26 HTTP/1.1" 200 2620
+[28/Nov/2019 17:58:33] "GET /static/js/vendor.d0b98dd19fbd2bfec8c8.js.map HTTP/1.1" 200 7859163
+[28/Nov/2019 17:58:35] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&timestrap=&order=&filter=10.10 HTTP/1.1" 200 2620
+[28/Nov/2019 17:58:38] "GET /api/v1/ip_info?b=%E6%94%BF%E5%BA%9C%E4%BA%8B%E4%B8%9A%E9%83%A8&e=%E5%9B%BD%E5%AE%B6%E5%B9%B3%E5%8F%B0&timestrap=&order=-memoryrate&filter=10.10 HTTP/1.1" 200 2622
+[28/Nov/2019 17:58:40] "GET /api/v1/all_info?e=IT%E8%BF%90%E7%BB%B4&b=IT%E8%BF%90%E7%BB%B4&id=27 HTTP/1.1" 200 323
+[28/Nov/2019 17:58:40] "GET /api/v1/ip_info?e=IT%E8%BF%90%E7%BB%B4&b=IT%E8%BF%90%E7%BB%B4&id=27 HTTP/1.1" 200 2581
+[28/Nov/2019 17:58:45] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=&order=-memoryrate HTTP/1.1" 200 2600
+[28/Nov/2019 17:58:51] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-27 HTTP/1.1" 200 321
+[28/Nov/2019 17:58:51] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-27 HTTP/1.1" 200 2576
+[28/Nov/2019 17:58:56] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-28 HTTP/1.1" 200 323
+[28/Nov/2019 17:58:56] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-28 HTTP/1.1" 200 2581
+[28/Nov/2019 17:59:04] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-27 HTTP/1.1" 200 321
+[28/Nov/2019 17:59:04] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-27 HTTP/1.1" 200 2576
+[28/Nov/2019 17:59:08] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-28 HTTP/1.1" 200 323
+[28/Nov/2019 17:59:08] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-28 HTTP/1.1" 200 2581
+[28/Nov/2019 17:59:13] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-27 HTTP/1.1" 200 321
+[28/Nov/2019 17:59:13] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-27 HTTP/1.1" 200 2576
+[28/Nov/2019 17:59:19] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-28 HTTP/1.1" 200 323
+[28/Nov/2019 17:59:19] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4&timestrap=2019-11-28 HTTP/1.1" 200 2581
+[28/Nov/2019 17:59:40] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 17:59:40] "GET /api/v1/home HTTP/1.1" 200 476
+[28/Nov/2019 17:59:40] "GET /favicon.ico HTTP/1.1" 200 526
+[28/Nov/2019 17:59:53] "GET /api/v1/all_info?e=IT%E8%BF%90%E7%BB%B4&b=IT%E8%BF%90%E7%BB%B4&id=27 HTTP/1.1" 200 323
+[28/Nov/2019 17:59:53] "GET /api/v1/ip_info?e=IT%E8%BF%90%E7%BB%B4&b=IT%E8%BF%90%E7%BB%B4&id=27 HTTP/1.1" 200 2581
+[28/Nov/2019 17:59:53] "GET /api/v1/all_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4 HTTP/1.1" 200 323
+[28/Nov/2019 17:59:53] "GET /api/v1/ip_info?b=IT%E8%BF%90%E7%BB%B4&e=IT%E8%BF%90%E7%BB%B4 HTTP/1.1" 200 2581
+[28/Nov/2019 17:59:53] "GET /favicon.ico HTTP/1.1" 200 526

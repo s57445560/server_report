@@ -1,0 +1,20 @@
+now time ---> Thu Nov 28 14:29:12 CST 2019
+10.11.8.1 run salt ok!
+10.10.7.6 run salt ok!
+[{'10.10.1.32': {'failed': True}}, {'10.10.26.32': {'failed': True}}, {'10.10.26.38': {'failed': True}}, {'10.10.26.39': {'failed': True}}, {'10.10.26.37': {'failed': True}}]
+db tables is not ip:10.11.3.26
+db tables is not ip:10.11.3.27
+db tables is not ip:192.168.3.27
+db tables is not ip:192.168.3.26
+db tables is not ip:10.11.3.25
+db tables is not ip:10.11.3.24
+now time ---> Thu Nov 28 15:00:01 CST 2019
+10.11.8.1 run salt ok!
+10.10.7.6 run salt ok!
+[{'cnbjsjqpvfszldb01': {'failed': True}}]
+db tables is not ip:10.11.3.26
+db tables is not ip:192.168.3.26
+db tables is not ip:10.11.3.27
+db tables is not ip:10.11.3.25
+db tables is not ip:192.168.3.27
+db tables is not ip:10.11.3.24
