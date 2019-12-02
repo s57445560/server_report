@@ -224,7 +224,9 @@ class Download(APIView):
         alldict = {}
         # ips = None
         if timestrap:
-            ips = IpInfo.objects.filter(times__pub_date='2019-12-02')
+            ips = IpInfo.objects.filter(times__pub_date=timestrap)
+            if not ips:
+                return Response({"status":False})
         else:
             ips = IpInfo.objects.filter(times__pub_date=datetime.datetime.now().strftime('%Y-%m-%d'))
 
