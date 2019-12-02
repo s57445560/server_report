@@ -66,6 +66,8 @@ class IpInfo(models.Model):
 
     averageload = models.DecimalField(max_digits=6,decimal_places=3,verbose_name='平均load值')
 
+    cpurate = models.CharField(max_length=10,verbose_name='cpu使用率',default='0')
+
     disktotal = models.DecimalField(max_digits=18,decimal_places=1,verbose_name='磁盘总量')
 
     diskrate = models.CharField(max_length=10, verbose_name='硬盘使用率')
@@ -119,9 +121,15 @@ class IpConfig(models.Model):
         (0, 'service'),
         (1, 'big_data')
     )
+    TYPE_CHOICES2 = (
+        (0, '虚拟机'),
+        (1, '物理机')
+    )
     ip = models.CharField(max_length=20,verbose_name='ip名称')
     type = models.SmallIntegerField(choices=TYPE_CHOICES, default=0, verbose_name='服务器类型')
     env = models.ForeignKey(Environment,on_delete=models.CASCADE, verbose_name='环境')
+    servertype = models.SmallIntegerField(choices=TYPE_CHOICES2, default=0, verbose_name='类型')
+
 
     class  Meta:
         db_table = 'ipconfig'

@@ -30,6 +30,9 @@ urlpatterns = [
     url(r'^(?P<version>[v1|v2]+)/all_info$',views.All_info.as_view(),name='all_info'),
     url(r'^(?P<version>[v1|v2]+)/download$',views.Download.as_view(),name='download'),
     url(r'^(?P<version>[v1|v2]+)/home$',views.Home.as_view(),name='home'),
+    url(r'^(?P<version>[v1|v2]+)/memory$',views.Memory_table.as_view(),name='memory'),
+    url(r'^(?P<version>[v1|v2]+)/disk$',views.Disk_table.as_view(),name='disk'),
+    url(r'^(?P<version>[v1|v2]+)/cpu$',views.Cpu_table.as_view(),name='cpu'),
 
 ]
 
