@@ -97,7 +97,7 @@ class Ip_info(APIView):
         ipser = IpinfoSerializer(instance=pg_ips, many=True)
 
         totalcount = IpInfo.objects.filter(env=bus,times__pub_date=times).count()
-        vircount = IpInfo.objects.filter(env=bus,times__pub_date=times,type=0).count()
+        vircount = IpInfo.objects.filter(env=bus,times__pub_date=times,servertype=0).count()
         print(123)
         ip_dict = {
             "servertotalcount":totalcount,"vircount":vircount,"phycount":totalcount-vircount,
