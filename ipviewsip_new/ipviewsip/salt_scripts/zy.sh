@@ -38,7 +38,7 @@ cpu_b=`sar -u 2>/dev/null|egrep '^[0-9]'|awk -F' ' 'NR>1{a+=$3}END{printf "%.2f"
 
 # --------------------------- 磁盘
 # 磁盘容量总是
-disk_all_number=`fdisk -l 2>/dev/null|grep "/dev/sd[a-z]:"|awk '{a+=$3}END{print a}'`
+disk_all_number=`df -Pm|egrep -v "(docker|kubelet)"|grep -Pv '^[0-9]'|awk 'NR!=1{a+=+$2}END{printf "%.1f\n",a/1024}'`
 disk_use=`df -Pm|egrep -v "(docker|kubelet)"|grep -Pv '^[0-9]'|awk 'NR!=1{a+=+$3}END{printf "%.1f\n",a/1024}'`
 
 disk_b=`awk 'BEGIN{printf "%.2f%",'$disk_use'/'$disk_all_number'*100}'`
