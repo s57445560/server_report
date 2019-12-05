@@ -74,7 +74,11 @@ def insert_db(pk,status=True):
     # return True
     for i in pk[1:]:
         for k, v in i.items():
-            host_l = v['ret']['stdout'].split("|")  # 获取每台主机的信息
+            try:
+                host_l = v['ret']['stdout'].split("|")  # 获取每台主机的信息
+            except TypeError as f:
+                print(f,v)
+                continue
             config_obj = models.IpConfig.objects.filter(ip=host_l[0])
             if config_obj:
                 env_id = config_obj[0].env.id
