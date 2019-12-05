@@ -461,3 +461,63 @@ class Cpu_table(APIView):
                 result[1].append([0.00 if i["cpurate"] == '' else float(i["cpurate"]), id_s, i["name"], "服务"])
 
         return Response(result)
+
+class Rate_table(APIView):
+    def get(self,request,*args,**kwargs):
+        env_name = request.GET.get("e")
+        bus_name = request.GET.get("b")
+        type = request.GET.get("type")
+        envobj = Environment.objects.get(name=env_name, to_b__name=bus_name)
+        title = [[],[],[]]
+        data = [[],[],[]]
+        rate_number = [{"0-19.99":0,"20-39.99":0,"40-59.99":0,"60-79.99":0,"80-100":0},{"0-19.99":0,"20-39.99":0,"40-59.99":0,"60-79.99":0,"80-100":0},{"0-19.99":0,"20-39.99":0,"40-59.99":0,"60-79.99":0,"80-100":0}]
+        timestrap = request.GET.get('timestrap')
+        if not timestrap:
+            timestrap = datetime.datetime.now().strftime("%Y-%m-%d")
+        ip_obj = models.IpInfo.objects.filter(times__pub_date=timestrap,env=envobj,type=type)
+        for i in ip_obj:
+            memoryrate = i.memoryrate
+            diskrate = i.diskrate
+            cpurate = i.cpurate
+            compute_rate(rate_number[0],memoryrate)
+            compute_rate(rate_number[1],diskrate)
+            compute_rate(rate_number[2],cpurate)
+
+        rate_write(title[0],data[0],rate_number[0])
+        rate_write(title[1],data[1],rate_number[1])
+        rate_write(title[2],data[2],rate_number[2])
+        print(rate_number,title,data)
+        return Response({"data":data,"title":title})
+
+
+def compute_rate(dic,n):
+    if not n :
+        n = 0.00
+    n = float(n)
+    for k,v in dic.items():
+        min, max = k.split('-')
+        if n > int(min) and n <= float(max):
+            dic[k] += 1
+
+
+def rate_write(title,data,d):
+    for k,v in d.items():
+        if v == 0:
+            continue
+        if k == "0-19.99":
+            title.append("百分之0 - 19占比")
+            data.append({"value":v,"name":"百分之0 - 19占比"})
+        elif k == "20-39.99":
+            title.append("百分之20 - 39占比")
+            data.append({"value": v, "name": "百分之20 - 39占比"})
+        elif k == "40-59.99":
+            title.append("百分之40 - 59占比")
+            data.append({"value": v, "name": "百分之40 - 59占比"})
+        elif k == "60-79.99":
+            title.append("百分之60 - 79占比")
+            data.append({"value": v, "name": "百分之60 - 79占比"})
+        elif k == "80-100":
+            title.append("百分之80 - 100占比")
+            data.append({"value": v, "name": "百分之80 - 100占比"})
+
+
