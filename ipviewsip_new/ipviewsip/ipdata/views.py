@@ -186,17 +186,21 @@ class Home(APIView):
     def get(self,request,*args,**kwargs):
         dic = {}
         ip_all = models.IpConfig.objects.all().count()
+        p_all = models.IpConfig.objects.filter(servertype=1).count()
+        v_all = models.IpConfig.objects.filter(servertype=0).count()
         e_all = models.Environment.objects.all().count()
         b_obj = models.BusinessUnit.objects.all()
         dic = {
             'ip_all':ip_all,
             'e_all':e_all,
+            'v_all':v_all,
+            'p_all':p_all,
             'number':{},
             'b_list':[
                 ['product', '物理机', '虚拟机'],
             ],
-
         }
+
         for i in b_obj:
             v_number = models.IpConfig.objects.filter(env__to_b_id=i.id,servertype=0).count()
             s_number = models.IpConfig.objects.filter(env__to_b_id=i.id,servertype=1).count()
