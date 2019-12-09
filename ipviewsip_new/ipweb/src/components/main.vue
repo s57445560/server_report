@@ -31,7 +31,8 @@
     name: 'Main',
     data () {
       return {
-        msg: '主页面'
+        msg: '主页面',
+        form:{"region":""}
       }
     },
     computed:{
