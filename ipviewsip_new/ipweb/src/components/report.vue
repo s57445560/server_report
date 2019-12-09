@@ -47,7 +47,9 @@
                 </el-col>
               </el-row>
 <!--            内存的行-->
-            <el-divider content-position="left">内存</el-divider>
+            <el-divider content-position="left">
+              <span style="font-size: 20px;color: #409EFF;font-weight: bold"><i class="el-icon-data-line"></i> 内存</span>
+            </el-divider>
             <el-row :gutter="5">
               <el-col :span="10" style="padding-bottom: 8px">
                 <el-row :gutter="2">
@@ -170,7 +172,7 @@
               </el-col>
             </el-row>
 
-            <el-row :gutter="5">
+            <el-row :gutter="5" style="padding-bottom: 10px;">
               <el-col :span="12">
                 <el-card class="box-card" style="height: 397px;">
                       <div id="mem_rate_0" style="height: 397px;"></div>
@@ -184,7 +186,9 @@
             </el-row>
 
 <!--            磁盘的行-->
-            <el-divider content-position="left">磁盘</el-divider>
+            <el-divider content-position="left">
+              <span style="font-size: 20px;color: #409EFF;font-weight: bold"><i class="el-icon-data-line"></i> 磁盘</span>
+            </el-divider>
             <el-row :gutter="5">
               <el-col :span="10" style="padding-bottom: 8px">
                 <el-row :gutter="2">
@@ -307,7 +311,7 @@
               </el-col>
             </el-row>
 
-            <el-row :gutter="5">
+            <el-row :gutter="5" style="padding-bottom: 10px;">
               <el-col :span="12">
                 <el-card class="box-card" style="height: 397px;">
                       <div id="disk_rate_0" style="height: 397px;"></div>
@@ -321,7 +325,9 @@
             </el-row>
 
 <!--            cpu的行-->
-            <el-divider content-position="left">cpu</el-divider>
+            <el-divider content-position="left">
+              <span style="font-size: 20px;color: #409EFF;font-weight: bold"><i class="el-icon-data-line"></i> cpu</span>
+            </el-divider>
             <el-row :gutter="5">
               <el-col :span="10" style="padding-bottom: 8px">
                 <el-row :gutter="2">
