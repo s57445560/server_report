@@ -121,9 +121,11 @@ const actions = {
     })
   },
   get_home({state, commit, rootState},data){
+    commit("set_loading",true);
     Vue.http.get(Vue.baseConfig.request_url + "/api/v1/home", {
       params: data
     }).then(function (resp) {
+      commit("set_loading",false);
       commit("set_home",resp.data);
       let myChart = Vue.echarts.init(document.getElementById('container'));
             myChart.setOption({

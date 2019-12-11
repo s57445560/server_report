@@ -1,6 +1,6 @@
 <template>
-  <div id="main">
-    <el-row :gutter="12">
+  <div id="main" v-loading="get_loading">
+    <el-row :gutter="12" >
       <el-col :span="6">
         <el-card shadow="always">
           <i class="el-icon-s-platform"></i>服务器总数量：{{get_home_s.ip_all}}
@@ -38,12 +38,15 @@
     computed:{
       get_home_s(){
         return this.$store.state.Base.Home;
-      }
+      },
+      get_loading(){
+        return this.$store.state.Base.loading;
+      },
     },
     methods:{
+
     },
     created(){
-      console.log(this.baseConfig.request_url,"111111111111111");
       this.$store.dispatch("get_home");
     },
   }
