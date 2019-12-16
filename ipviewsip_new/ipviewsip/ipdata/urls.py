@@ -34,6 +34,8 @@ urlpatterns = [
     url(r'^(?P<version>[v1|v2]+)/disk$',views.Disk_table.as_view(),name='disk'),
     url(r'^(?P<version>[v1|v2]+)/cpu$',views.Cpu_table.as_view(),name='cpu'),
     url(r'^(?P<version>[v1|v2]+)/rate$',views.Rate_table.as_view(),name='rate'),
+    url(r'^(?P<version>[v1|v2]+)/ipconfig$',views.Ipconfig.as_view(),name='ipconfig'),
+    url(r'^(?P<version>[v1|v2]+)/resource_curve$',views.Resource_curve_table.as_view(),name='resource_curve'),
 
 ]
 

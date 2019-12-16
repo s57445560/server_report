@@ -28,8 +28,8 @@ def create_dic():
     for i in ip:
         all_dic.setdefault(i.env.to_b.name, {})
         all_dic[i.env.to_b.name].setdefault(i.env.name,{})
-        all_dic[i.env.to_b.name][i.env.name].setdefault("bigdata", [0,0,0,0,0,0])
-        all_dic[i.env.to_b.name][i.env.name].setdefault("service", [0,0,0,0,0,0])
+        all_dic[i.env.to_b.name][i.env.name].setdefault("bigdata", [0,0,0,0,0,0,0,0])
+        all_dic[i.env.to_b.name][i.env.name].setdefault("service", [0,0,0,0,0,0,0,0])
 
 
 class SaltApi(object):
@@ -123,11 +123,17 @@ def insert_db(pk,status=True):
                     all_dic[b_name][env_name]["service"][3] += float(host_l[6])
                     all_dic[b_name][env_name]["service"][4] += float(host_l[7])
 
+                    all_dic[b_name][env_name]["service"][6] += float(0.00 if host_l[10] == "" else host_l[10])
+                    all_dic[b_name][env_name]["service"][7] += 1
+
                 else:
                     all_dic[b_name][env_name]["bigdata"][0] += int(host_l[1])
                     all_dic[b_name][env_name]["bigdata"][1] += int(host_l[2])
                     all_dic[b_name][env_name]["bigdata"][3] += float(host_l[6])
                     all_dic[b_name][env_name]["bigdata"][4] += float(host_l[7])
+
+                    all_dic[b_name][env_name]["bigdata"][6] += float(0.00 if host_l[10] == "" else host_l[10])
+                    all_dic[b_name][env_name]["bigdata"][7] += 1
 
             else:
                 # 在IpConfig 表内没有的服务器
@@ -142,11 +148,18 @@ def all_dic_rate():
                 vv["service"][2] = use_rate
                 use_rate = vv["service"][4]/vv["service"][3]*100
                 vv["service"][5] = use_rate
+                cpu_rate = float('%0.2f' % (vv["service"][6] / vv["service"][7]))
+                vv["service"][6] = cpu_rate
+                # print(cpu_rate,vv["service"][6],vv["service"][7],vv)
+
             if vv["bigdata"][0] != 0:
                 use_rate = vv["bigdata"][1]/vv["bigdata"][0]*100
                 vv["bigdata"][2] = use_rate
                 use_rate = vv["bigdata"][4]/vv["bigdata"][3]*100
                 vv["bigdata"][5] = use_rate
+                cpu_rate = float('%0.2f'%(vv["bigdata"][6]/vv["bigdata"][7]))
+                vv["bigdata"][6] = cpu_rate
+                # print(cpu_rate,vv["bigdata"][6],vv["bigdata"][7],vv)
 
 def insert_all():
     time_obj = models.RecordingTime.objects.filter().last()
@@ -169,13 +182,15 @@ def insert_all():
             if vv["service"][0] != 0:
                 models.AllData.objects.update_or_create(env_id=e_obj.id, time_id=time_id, type=0,defaults={
                     "type":0,"memorytotal":vv["service"][0],"memoryuse":vv["service"][1],"memoryrate":float("%0.2f"%vv["service"][2]),
-                    "disktotal":vv["service"][3],"diskuse":vv["service"][4],"diskrate":float("%0.2f"%vv["service"][5])
+                    "disktotal":vv["service"][3],"diskuse":vv["service"][4],"diskrate":float("%0.2f"%vv["service"][5]),
+                    'cpurate': vv["service"][6]
                 })
 
             if vv["bigdata"][0] != 0:
                 models.AllData.objects.update_or_create(env_id=e_obj.id, time_id=time_id, type=1,defaults={
                     "type":1,"memorytotal":vv["bigdata"][0],"memoryuse":vv["bigdata"][1],"memoryrate":float("%0.2f"%vv["bigdata"][2]),
-                    "disktotal":vv["bigdata"][3],"diskuse":vv["bigdata"][4],"diskrate":float("%0.2f"%vv["bigdata"][5])
+                    "disktotal":vv["bigdata"][3],"diskuse":vv["bigdata"][4],"diskrate":float("%0.2f"%vv["bigdata"][5]),
+                    'cpurate': vv["bigdata"][6]
                 })
 
 
@@ -209,6 +224,7 @@ if __name__ == '__main__':
 
     # 计算各个项目的总量
     all_dic_rate()
+    # print(all_dic)
 
     # 插入AllData 表的数据
     insert_all()

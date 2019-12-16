@@ -108,6 +108,8 @@ class AllData(models.Model):
 
     diskrate = models.CharField(max_length=10,verbose_name='硬盘使用率')
 
+    cpurate = models.CharField(max_length=10,verbose_name='硬盘使用率',default=0)
+
     env = models.ForeignKey(Environment, on_delete=models.CASCADE, verbose_name='环境')
 
     time = models.ForeignKey(RecordingTime, on_delete=models.CASCADE, verbose_name='时间')

@@ -37,9 +37,13 @@ class IpinfoSerializer(serializers.ModelSerializer):
 
 class AlldataSerializer(serializers.ModelSerializer):
 
-    time = serializers.StringRelatedField(label='时间')
     class Meta:
         model = AllData
+        fields = "__all__"				# 查询表内所有的内容
+
+class IpconfigSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.IpConfig
         fields = "__all__"				# 查询表内所有的内容
 
 
@@ -53,6 +57,22 @@ class Base_info(APIView):
                 k.setdefault("e_list",[])
                 k['e_list'].append(i.split("|"))
         return Response(ser.data)		# ensure_ascii json时显示中文
+
+class Ipconfig(APIView):
+
+    def get(self,request,*args,**kwargs):
+        ret = models.IpConfig.objects.all()
+        ser = IpconfigSerializer(instance=ret, many=True)
+        return Response(ser.data)
+
+    def post(self,request,*args,**kwargs):
+        print(request.data)
+        ser = IpconfigSerializer(data=request.data)
+        if ser.is_valid():
+            print(ser.validated_data,ser.validated_data['get_type_display'])
+        else:
+            print(ser.errors)
+        return Response(ser.errors)
 
 
 class StandartPageNumberPagination(PageNumberPagination):
@@ -98,20 +118,16 @@ class Ip_info(APIView):
 
         totalcount = IpInfo.objects.filter(env=bus,times__pub_date=times).count()
         vircount = IpInfo.objects.filter(env=bus,times__pub_date=times,servertype=0).count()
-        print(123)
         ip_dict = {
             "servertotalcount":totalcount,"vircount":vircount,"phycount":totalcount-vircount,
             'select_number':ips.count(),
             "IP":ipser.data
         }
-        print(456)
         return Response(ip_dict)
-
 
 class All_info(APIView):
 
     def get(self,request,*args,**kwargs):
-
         env_name = request.GET.get("e")
         bus_name = request.GET.get("b")
         envobj = Environment.objects.get(name=env_name, to_b__name=bus_name)
@@ -168,6 +184,7 @@ class All_info(APIView):
                 i.setdefault("cpucore",float("%.2f"%result["service"][0]))
                 dic['service'] = i
             else:
+
                 i.setdefault("cpurate", float("%.2f"%result["bigdata"][1]))
                 i.setdefault("cpucore", float("%.2f" % result["bigdata"][0]))
                 dic['bigdata'] = i
@@ -200,7 +217,6 @@ class Home(APIView):
                 ['product', '物理机', '虚拟机'],
             ],
         }
-
         for i in b_obj:
             v_number = models.IpConfig.objects.filter(env__to_b_id=i.id,servertype=0).count()
             s_number = models.IpConfig.objects.filter(env__to_b_id=i.id,servertype=1).count()
@@ -230,6 +246,7 @@ class Download(APIView):
         if timestrap:
             ips = IpInfo.objects.filter(times__pub_date=timestrap)
             if not ips:
+                print(1111111111111111111)
                 return Response({"status":False})
         else:
             ips = IpInfo.objects.filter(times__pub_date=datetime.datetime.now().strftime('%Y-%m-%d'))
@@ -525,3 +542,28 @@ def rate_write(title,data,d):
             data.append({"value": v, "name": "百分之80 - 100占比"})
 
 
+class Resource_curve_table(APIView):
+    def get(self,request,*args,**kwargs):
+        env_name = request.GET.get("e")
+        bus_name = request.GET.get("b")
+        envobj = Environment.objects.get(name=env_name, to_b__name=bus_name)
+        result = [['应用内存','大数据内存','应用磁盘','大数据磁盘','应用cpu','大数据cpu'],[],[],[],[],[],[],[]]
+
+        timestrap = (datetime.datetime.now() - datetime.timedelta(days = 180)).strftime("%Y-%m-%d")
+        print(timestrap)
+        obj = models.AllData.objects.filter(time__pub_date__gt=timestrap,env=envobj).prefetch_related("time")
+        for i in obj:
+            if i.time.pub_date not in result[1]:
+                result[1].append(i.time.pub_date)
+            if i.type == 0:
+                result[2].append(i.memoryrate)
+                result[4].append(i.diskrate)
+                result[6].append(i.cpurate)
+            else:
+                result[3].append(i.memoryrate)
+                result[5].append(i.diskrate)
+                result[7].append(i.cpurate)
+
+
+
+        return Response(result)
