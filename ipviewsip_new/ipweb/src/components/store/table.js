@@ -537,6 +537,249 @@ const actions = {
 });
     })
   },
+
+  get_all({state, commit, rootState},data){
+    Vue.http.get(Vue.baseConfig.request_url + "/api/v1/resource_curve", {
+      params: data
+    }).then(function (resp) {
+      var data = resp.data;
+      console.log(data);
+      let mem_all = Vue.echarts.init(document.getElementById('mem_all'));
+      let disk_all = Vue.echarts.init(document.getElementById('disk_all'));
+      let cpu_all = Vue.echarts.init(document.getElementById('cpu_all'));
+      mem_all.setOption({
+    title: {
+        text: '内存使用率历史图'
+    },
+    color:['#88cb7e','#6e79c2'],
+    tooltip: {
+        trigger: 'axis',
+        formatter: "{b} <br/> {a0} : {c0} % <br/>{a1} : {c1} %"
+    },
+    legend: {
+        data:data[0]
+    },
+    toolbox: {
+        dataZoom: {
+            yAxisIndex: 'none'  // y轴不缩放，Index默认为0
+        },
+        restore: {},
+        saveAsImage: {}
+    },
+    dataZoom: [{                 // 内置于坐标系中，使用户可以在坐标系上通过鼠标拖拽、鼠标滚轮、手指滑动（触屏上）来缩放或漫游坐标系
+        type: 'inside',
+        start: 40,
+        }, {
+            start: 0,
+            end: 0,                  // handleIcon 手柄的 icon 形状，支持路径字符串
+            handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+            handleSize: '80%',        //  控制手柄的尺寸，可以是像素大小，也可以是相对于 dataZoom 组件宽度的百分比，默认跟 dataZoom 宽度相同。
+            handleStyle: {
+                color: 'pink',
+                shadowBlur: 3,      // shadowBlur图片阴影模糊值，shadowColor阴影的颜色
+                shadowColor: 'red',
+                shadowOffsetX: 2,
+                shadowOffsetY: 2
+                }
+            }],
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+            axisLine: {//坐标轴
+        lineStyle:{
+            opacity: 0.00,//设置透明度就可以控制显示不显示
+        },
+    },
+        data: data[1]
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name:'应用内存',
+        data: data[2],
+        type: 'line',
+        areaStyle: {},
+        color: new Vue.echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+              offset: 0, color: '#ff9055' // 0% 处的颜色
+             }, {
+                 offset: 0.4, color: '#ff9055' // 100% 处的颜色
+             }, {
+                 offset: 1, color: '#fff' // 100% 处的颜色
+             }]
+         ),
+    },
+    {
+        name:'大数据内存',
+        data: data[3],
+        type: 'line',
+        areaStyle: {},
+        color: new Vue.echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+              offset: 0, color: '#6ea695' // 0% 处的颜色
+             }, {
+                 offset: 0.4, color: '#6ea695' // 100% 处的颜色
+             }, {
+                 offset: 1, color: '#fff' // 100% 处的颜色
+             }]
+         ),
+    }]
+});
+      disk_all.setOption({
+    title: {
+        text: '磁盘使用率历史图'
+    },
+    color:['#88cb7e','#6e79c2'],
+    tooltip: {
+        trigger: 'axis',
+        formatter: "{b} <br/> {a0} : {c0} % <br/>{a1} : {c1} %"
+    },
+    legend: {
+        data:data[0]
+    },
+    toolbox: {
+        dataZoom: {
+            yAxisIndex: 'none'  // y轴不缩放，Index默认为0
+        },
+        restore: {},
+        saveAsImage: {}
+    },
+    dataZoom: [{                 // 内置于坐标系中，使用户可以在坐标系上通过鼠标拖拽、鼠标滚轮、手指滑动（触屏上）来缩放或漫游坐标系
+        type: 'inside',
+        start: 40,
+        }, {
+            start: 0,
+            end: 0,                  // handleIcon 手柄的 icon 形状，支持路径字符串
+            handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+            handleSize: '80%',        //  控制手柄的尺寸，可以是像素大小，也可以是相对于 dataZoom 组件宽度的百分比，默认跟 dataZoom 宽度相同。
+            handleStyle: {
+                color: 'pink',
+                shadowBlur: 3,      // shadowBlur图片阴影模糊值，shadowColor阴影的颜色
+                shadowColor: 'red',
+                shadowOffsetX: 2,
+                shadowOffsetY: 2
+                }
+            }],
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+            axisLine: {//坐标轴
+        lineStyle:{
+            opacity: 0.00,//设置透明度就可以控制显示不显示
+        },
+    },
+        data: data[1]
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name:'应用内存',
+        data: data[4],
+        type: 'line',
+        areaStyle: {},
+        color: new Vue.echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+              offset: 0, color: '#ff9055' // 0% 处的颜色
+             }, {
+                 offset: 0.4, color: '#ff9055' // 100% 处的颜色
+             }, {
+                 offset: 1, color: '#fff' // 100% 处的颜色
+             }]
+         ),
+    },
+    {
+        name:'大数据内存',
+        data: data[5],
+        type: 'line',
+        areaStyle: {},
+        color: new Vue.echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+              offset: 0, color: '#6ea695' // 0% 处的颜色
+             }, {
+                 offset: 0.4, color: '#6ea695' // 100% 处的颜色
+             }, {
+                 offset: 1, color: '#fff' // 100% 处的颜色
+             }]
+         ),
+    }]
+});
+      cpu_all.setOption({
+    title: {
+        text: 'cpu使用率历史图'
+    },
+    color:['#88cb7e','#6e79c2'],
+    tooltip: {
+        trigger: 'axis',
+        formatter: "{b} <br/> {a0} : {c0} % <br/>{a1} : {c1} %"
+    },
+    legend: {
+        data:data[0]
+    },
+    toolbox: {
+        dataZoom: {
+            yAxisIndex: 'none'  // y轴不缩放，Index默认为0
+        },
+        restore: {},
+        saveAsImage: {}
+    },
+    dataZoom: [{                 // 内置于坐标系中，使用户可以在坐标系上通过鼠标拖拽、鼠标滚轮、手指滑动（触屏上）来缩放或漫游坐标系
+        type: 'inside',
+        start: 40,
+        }, {
+            start: 0,
+            end: 0,                  // handleIcon 手柄的 icon 形状，支持路径字符串
+            handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+            handleSize: '80%',        //  控制手柄的尺寸，可以是像素大小，也可以是相对于 dataZoom 组件宽度的百分比，默认跟 dataZoom 宽度相同。
+            handleStyle: {
+                color: 'pink',
+                shadowBlur: 3,      // shadowBlur图片阴影模糊值，shadowColor阴影的颜色
+                shadowColor: 'red',
+                shadowOffsetX: 2,
+                shadowOffsetY: 2
+                }
+            }],
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+            axisLine: {//坐标轴
+        lineStyle:{
+            opacity: 0.00,//设置透明度就可以控制显示不显示
+        },
+    },
+        data: data[1]
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name:'应用内存',
+        data: data[6],
+        type: 'line',
+        areaStyle: {},
+        color: new Vue.echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+              offset: 0, color: '#ff9055' // 0% 处的颜色
+             }, {
+                 offset: 0.4, color: '#ff9055' // 100% 处的颜色
+             }, {
+                 offset: 1, color: '#fff' // 100% 处的颜色
+             }]
+         ),
+    },
+    {
+        name:'大数据内存',
+        data: data[7],
+        type: 'line',
+        areaStyle: {},
+        color: new Vue.echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+              offset: 0, color: '#6ea695' // 0% 处的颜色
+             }, {
+                 offset: 0.4, color: '#6ea695' // 100% 处的颜色
+             }, {
+                 offset: 1, color: '#fff' // 100% 处的颜色
+             }]
+         ),
+    }]
+});
+    })
+  },
 };
 
 
