@@ -37,7 +37,7 @@
                 <el-col :span="4">
                   <el-button type="primary" icon="el-icon-search" @click="filter_time">搜索</el-button>
                 </el-col>
-              <el-col :span="4">
+                <el-col :span="4">
                   <el-button type="primary" icon="el-icon-download" @click="download" :loading="get_b_loading">生成报表</el-button>
                 </el-col>
                 <el-col :span="5" :offset="3">
@@ -172,7 +172,7 @@
               </el-col>
             </el-row>
 
-            <el-row :gutter="5" style="padding-bottom: 10px;">
+            <el-row :gutter="5" style="padding-bottom: 8px;">
               <el-col :span="12">
                 <el-card class="box-card" style="height: 397px;">
                       <div id="mem_rate_0" style="height: 397px;"></div>
@@ -183,6 +183,12 @@
                       <div id="mem_rate_1" style="height: 397px;"></div>
                 </el-card>
               </el-col>
+            </el-row>
+
+            <el-row :gutter="5" style="padding-bottom: 10px;">
+              <el-card class="box-card" style="height: 415px;">
+                <div id="mem_all" style="height: 397px;"></div>
+              </el-card>
             </el-row>
 
 <!--            磁盘的行-->
@@ -324,6 +330,12 @@
               </el-col>
             </el-row>
 
+            <el-row :gutter="5" style="padding-bottom: 10px;padding-top: 8px;">
+              <el-card class="box-card" style="height: 415px;">
+                <div id="disk_all" style="height: 397px;"></div>
+              </el-card>
+            </el-row>
+
 <!--            cpu的行-->
             <el-divider content-position="left">
               <span style="font-size: 20px;color: #409EFF;font-weight: bold"><i class="el-icon-data-line"></i> cpu</span>
@@ -434,6 +446,12 @@
               </el-col>
             </el-row>
 
+            <el-row :gutter="5" style="padding-bottom: 10px;padding-top: 8px;">
+              <el-card class="box-card" style="height: 415px;">
+                <div id="cpu_all" style="height: 397px;"></div>
+              </el-card>
+            </el-row>
+
 
           </el-tab-pane>
         </el-tabs>
@@ -482,6 +500,7 @@
         </el-pagination>
       </div>
     </el-drawer>
+
     </el-row>
 
 </template>
@@ -492,6 +511,7 @@ export default {
   data () {
     return {
       msg: '报表服务',
+      drawer:false,
       pickerOptions: {
         disabledDate(time) {
           return time.getTime() > Date.now();
@@ -616,6 +636,7 @@ export default {
       this.$store.dispatch('get_cpu',{"b":Json_data[0],"e":Json_data[1],"timestrap":this.Time});
       this.$store.dispatch('get_rate_0',{"b":Json_data[0],"e":Json_data[1],"timestrap":this.Time,'type':0});
       this.$store.dispatch('get_rate_1',{"b":Json_data[0],"e":Json_data[1],"timestrap":this.Time,'type':1});
+      this.$store.dispatch('get_all',{"b":Json_data[0],"e":Json_data[1]});
       if(this.$cookies.isKey("Title")){
         this.$store.commit("set_title",this.$cookies.get("Title"))
       }

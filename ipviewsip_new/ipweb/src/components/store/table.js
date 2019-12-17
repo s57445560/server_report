@@ -554,7 +554,13 @@ const actions = {
     color:['#88cb7e','#6e79c2'],
     tooltip: {
         trigger: 'axis',
-        formatter: "{b} <br/> {a0} : {c0} % <br/>{a1} : {c1} %"
+        formatter:function (params,ticket,callback) {
+          var st = params[0]["axisValue"] + "<br/>";
+          for(let v of params){
+            st = st +"<span style=\" color:"+v["color"]["colorStops"][0]["color"]+"\">"+ v["seriesName"] + " : "+ v["data"]+"%" +"</span>"+ "<br/>"
+          }
+          return st
+        }
     },
     legend: {
         data:data[0]
@@ -631,7 +637,13 @@ const actions = {
     color:['#88cb7e','#6e79c2'],
     tooltip: {
         trigger: 'axis',
-        formatter: "{b} <br/> {a0} : {c0} % <br/>{a1} : {c1} %"
+        formatter:function (params,ticket,callback) {
+          var st = params[0]["axisValue"] + "<br/>";
+          for(let v of params){
+            st = st +"<span style=\" color:"+v["color"]["colorStops"][0]["color"]+"\">"+ v["seriesName"] + " : "+ v["data"]+"%" +"</span>"+ "<br/>"
+          }
+          return st
+        }
     },
     legend: {
         data:data[0]
@@ -673,7 +685,7 @@ const actions = {
         type: 'value'
     },
     series: [{
-        name:'应用内存',
+        name:'应用磁盘',
         data: data[4],
         type: 'line',
         areaStyle: {},
@@ -687,7 +699,7 @@ const actions = {
          ),
     },
     {
-        name:'大数据内存',
+        name:'大数据磁盘',
         data: data[5],
         type: 'line',
         areaStyle: {},
@@ -708,7 +720,13 @@ const actions = {
     color:['#88cb7e','#6e79c2'],
     tooltip: {
         trigger: 'axis',
-        formatter: "{b} <br/> {a0} : {c0} % <br/>{a1} : {c1} %"
+        formatter:function (params,ticket,callback) {
+          var st = params[0]["axisValue"] + "<br/>";
+          for(let v of params){
+            st = st +"<span style=\" color:"+v["color"]["colorStops"][0]["color"]+"\">"+ v["seriesName"] + " : "+ v["data"]+"%" +"</span>"+ "<br/>"
+          }
+          return st
+        }
     },
     legend: {
         data:data[0]
@@ -750,7 +768,7 @@ const actions = {
         type: 'value'
     },
     series: [{
-        name:'应用内存',
+        name:'应用cpu',
         data: data[6],
         type: 'line',
         areaStyle: {},
@@ -764,7 +782,7 @@ const actions = {
          ),
     },
     {
-        name:'大数据内存',
+        name:'大数据cpu',
         data: data[7],
         type: 'line',
         areaStyle: {},

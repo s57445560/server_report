@@ -53,6 +53,7 @@
             this.$store.dispatch('get_cpu',{"e":ename,"b":bname,'id':id});
             this.$store.dispatch('get_rate_0',{"e":ename,"b":bname,'id':id,"timestrap":this.Time,'type':0});
             this.$store.dispatch('get_rate_1',{"e":ename,"b":bname,'id':id,"timestrap":this.Time,'type':1});
+            this.$store.dispatch('get_all',{"b":bname,"e":ename});
 
           },
           home(){
