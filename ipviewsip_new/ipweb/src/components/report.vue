@@ -1,5 +1,6 @@
 <template>
-  <el-row v-if="report_status" style="position: absolute;top:60px;bottom: 0;left:200px;right: 0;overflow-x:hidden;overflow-y:auto;">
+
+  <el-row v-if="report_status" style="position: absolute;top:60px;bottom: 0;left:200px;right: 0;overflow-x:hidden;overflow-y:auto;padding-top: 20px;">
     <el-row :gutter="12">
       <el-col :span="8">
         <el-card shadow="always">
